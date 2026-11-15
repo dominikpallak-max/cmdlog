@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "cmdlog",
+  "version": "${version}",
+  "name": "CmdLog",
+  "description": "Loguje komendy graczy i pozwala adminowi sprawdzic je w menu (nick + data).",
+  "authors": [],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["pl.cmdlog.CmdLogMod"],
+    "client": ["pl.cmdlog.client.CmdLogClient"]
+  },
+  "mixins": ["cmdlog.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
