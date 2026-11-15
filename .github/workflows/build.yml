@@ -25,6 +25,7 @@ jobs:
           gradle-version: 9.2.1
 
       - name: Build
+        working-directory: cmdlog
         run: gradle build
 
       - name: Upload jar
@@ -32,5 +33,5 @@ jobs:
         with:
           name: cmdlog
           path: |
-            build/libs/*.jar
-            !build/libs/*-sources.jar
+            cmdlog/build/libs/*.jar
+            !cmdlog/build/libs/*-sources.jar
